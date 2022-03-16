@@ -1,0 +1,17 @@
+[package]
+name = "hawk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "dhcp-server"
+path = "src/dhcp-server/main.rs"
+
+[[bin]]
+name = "management-server"
+path = "src/management-server/main.rs"
+
+[dependencies]
+redis = "0.21.5"
